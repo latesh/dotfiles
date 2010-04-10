@@ -1,2 +1,2 @@
-#compdef r
+#compdef c
 _files -W ~/Sites/rails -/
