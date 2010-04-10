@@ -7,10 +7,15 @@ IRB.conf[:HISTORY_FILE] = "#{ENV['HOME']}/.irb_history"
 
 IRB.conf[:PROMPT_MODE] = :SIMPLE
 
-%w[rubygems looksee/shortcuts wirble].each do |gem|
+%w[rubygems looksee/shortcuts wirble utility_belt].each do |gem|
   begin
     require gem
-  rescue LoadError
+    if gem.include? "wirble"
+      Wirble.init
+      Wirble.colorize
+    end
+    UtilityBelt.equip(:all) if gem.include? "utility_belt"
+    rescue LoadError
   end
 end
 
@@ -52,3 +57,6 @@ def paste
 end
 
 load File.dirname(__FILE__) + '/.railsrc' if $0 == 'irb' && ENV['RAILS_ENV']
+
+# q as exit
+alias q exit
