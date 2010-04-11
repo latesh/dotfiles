@@ -1,6 +1,4 @@
-. ~/.zsh/config
-. ~/.zsh/aliases
-. ~/.zsh/completion
+for config_file (~/.zsh/config/*.zsh) source $config_file
 
 # use .localrc for settings specific to one system
 [[ -f ~/.localrc ]] && .  ~/.localrc
