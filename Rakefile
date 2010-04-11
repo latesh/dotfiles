@@ -30,7 +30,7 @@ task :install do
       link_file(file)
     end
   end
-  `autojump/install.zsh`
+  `./autojump/install.zsh`
 end
 
 def replace_file(file)

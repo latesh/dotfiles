@@ -1,3 +1,4 @@
+#!/bin/zsh
 sudo mkdir -p /usr/share/autojump/
 sudo cp ~/.dotfiles/autojump/icon.png /usr/share/autojump/
 
