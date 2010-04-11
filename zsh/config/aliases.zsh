@@ -2,8 +2,11 @@
 alias sp="ssh -D 7345 bookeepr"
 alias s="ssh"
 
-# cd
+# Basic directory operations
+alias .='pwd'
 alias ..='cd ..'
+alias ...='cd ../..'
+alias -- -='cd -'
 
 # ls
 alias ls="ls -F"

@@ -35,4 +35,4 @@ ZSH_THEME_GIT_PROMPT_CLEAN=""               # Text to display if the branch is c
 setopt prompt_subst
 
 # Load the theme
-source "~/.zsh/themes/$ZSH_THEME.zsh-theme"
+source "$HOME/.dotfiles/zsh/themes/$ZSH_THEME.zsh-theme"
