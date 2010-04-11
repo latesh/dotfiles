@@ -1,6 +1,6 @@
-= Ryan Bates Dot Files
+= Latesh Galia's Dot Files
 
-These are config files to set up a system the way I like it.
+This project is a fork of ryanb's dotfiles, with themes and most of zsh config shamelessly copied from robbyrussell's oh-my-zsh.
 
 
 == Installation
@@ -22,7 +22,7 @@ the following command.
 
 == Features
 
-I normally place all of my coding projects in ~/code, so this directory 
+I normally place all of my coding projects in ~/Sites/rails, so this directory 
 can easily be accessed (and tab completed) with the "c" command.
 
   c railsca<tab>
@@ -30,7 +30,7 @@ can easily be accessed (and tab completed) with the "c" command.
 There is also an "h" command which behaves similar, but acts on the 
 home path.
 
-  h doc<tab>
+  h Dev<tab>
 
 Tab completion is also added to rake and cap commands:
 
@@ -62,7 +62,7 @@ also use show_log and hide_log in script/console to show the log inline.
   migrate  # rake db:migrate db:test:clone
   scaffold # script/generate nifty_scaffold
 
-See the other aliases in ~/.zsh/aliases
+See the other aliases in ~/.zsh/config/aliases.zsh
 
 If there are some shell configuration settings which you want secure or 
 specific to one system, place it into a ~/.localrc file. This will be 
@@ -72,3 +72,21 @@ There are several features enabled in Ruby's irb including history and
 completion. Many convenience methods are added as well such as "ri"
 which can be used to get inline documentation in IRB. See irbrc and
 railsrc files for details.
+
+
+== Bonus
+
+Included autojump (http://wiki.github.com/joelthelion/autojump/). 
+With autojump you dont need to type fullpath eg:
+$ j capis<tab> will complete the path to ~/Development/capistrano
+
+Cool. 
+
+You can preview themes here http://wiki.github.com/robbyrussell/oh-my-zsh/themes.
+I've set the default theme to 'macovsky' but you can always go ahead and
+set the theme you like in ~/.zshrc file.
+
+IRB
+
+Install wirble and utility_belt gems to get tonnes of other awesome
+features. Also read http://utilitybelt.rubyforge.org/usage.html
