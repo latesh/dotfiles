@@ -78,7 +78,8 @@ railsrc files for details.
 
 Included autojump (http://wiki.github.com/joelthelion/autojump/). 
 With autojump you dont need to type fullpath eg:
-$ j capis<tab> will complete the path to ~/Development/capistrano
+	
+	$ j capis<tab> will complete the path to ~/Development/capistrano
 
 Cool. 
 
