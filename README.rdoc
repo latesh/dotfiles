@@ -5,7 +5,7 @@ This project is a fork of ryanb's dotfiles, with themes and most of zsh config s
 
 == Installation
 
-  git clone git://github.com/ryanb/dotfiles ~/.dotfiles
+  git clone git://github.com/latesh/dotfiles ~/.dotfiles
   cd ~/.dotfiles
   rake install
 
