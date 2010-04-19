@@ -5,7 +5,7 @@ This project is a fork of ryanb's dotfiles, with themes and most of zsh config s
 
 == Installation
 
-  git clone git://github.com/ryanb/dotfiles ~/.dotfiles
+  git clone git://github.com/latesh/dotfiles ~/.dotfiles
   cd ~/.dotfiles
   rake install
 
@@ -79,7 +79,7 @@ railsrc files for details.
 Included autojump (http://wiki.github.com/joelthelion/autojump/). 
 With autojump you dont need to type fullpath eg:
 	
-	$ j capis<tab> will complete the path to ~/Development/capistrano
+  $ j capis<tab> will complete the path to ~/Development/capistrano
 
 Cool. 
 
