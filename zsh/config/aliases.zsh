@@ -1,3 +1,5 @@
+# misc
+alias lock='/System/Library/CoreServices/"Menu Extras"/User.menu/Contents/Resources/CGSession -suspend'
 # ssh
 alias sp="ssh -D 7345 bookeepr"
 alias s="ssh"
