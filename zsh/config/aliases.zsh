@@ -26,5 +26,13 @@ alias tlog='tail -f log/development.log'
 alias migrate='rake db:migrate db:test:clone'
 alias rst='touch tmp/restart.txt'
 
+# vagrant
+alias vu="vagrant up"
+alias vs="vagrant ssh"
+alias vh="vagrant halt"
+alias vres="vagrant resume"
+alias vsus="vagrant suspend"
+alias vrel="vagrant reload"
+
 # commands starting with % for pasting from web
 alias %=' '
