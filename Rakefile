@@ -1,12 +1,17 @@
 require 'rake'
 require 'erb'
 
+desc "install dot files and setup vimrc"
+task :install => [:install_files, :vimrc_setup] do
+  puts "Installation complete"
+end
+
 desc "install the dot files into user's home directory"
-task :install do
+task :install_files do
   replace_all = false
   Dir['*'].each do |file|
     next if %w[Rakefile README.rdoc LICENSE].include? file
-  
+
     if File.exist?(File.join(ENV['HOME'], ".#{file.sub('.erb', '')}"))
       if File.identical? file, File.join(ENV['HOME'], ".#{file.sub('.erb', '')}")
         puts "identical ~/.#{file.sub('.erb', '')}"
@@ -31,6 +36,14 @@ task :install do
     end
   end
   `./autojump/install.zsh`
+end
+
+desc "vimrc setup"
+task :vimrc_setup do
+  system %Q{git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim}
+  system %Q{vim +PluginInstall +qa!}
+  system %Q{git clone https://github.com/Shougo/vimproc.vim.git ~/.vim/bundle/vimproc.vim}
+  system %Q{cd ~/.vim/bundle/vimproc.vim && make}
 end
 
 def replace_file(file)
