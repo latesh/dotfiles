@@ -3,6 +3,7 @@ alias lock='/System/Library/CoreServices/"Menu Extras"/User.menu/Contents/Resour
 # ssh
 alias sp="ssh -D 7345 bookeepr"
 alias s="ssh"
+alias t="vendor/bin/codecept"
 
 # Basic directory operations
 alias .='pwd'
