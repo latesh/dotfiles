@@ -370,6 +370,10 @@ nnoremap <silent> <Leader>b :TagbarToggle<CR>
 let g:ctrlp_map = '<leader>o'
 let g:ctrlp_working_path_mode = 'ra'
 map <leader>c :CtrlPTag<cr>
+let g:ctrlp_prompt_mappings = {
+    \ 'AcceptSelection("e")': ['<c-t>'],
+    \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
+    \ }
 
 " airline
 if !exists("g:airline_symbols")
