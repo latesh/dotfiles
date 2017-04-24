@@ -9,7 +9,6 @@ This project is a fork of ryanb's dotfiles, with themes and most of zsh config s
   cd ~/.dotfiles
   rake install
 
-
 == Environment
 
 I am running on Mac OS X, but it will likely work on Linux as well with 
